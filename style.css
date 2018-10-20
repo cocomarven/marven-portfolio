@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Navigation */
+
+nav {
+  min-height: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  float: right;
+  background-color: #000;
+}
+
+nav ul {
+  margin: 0 200px 0 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 15px 25px;
+  float: left;
+}
+
+nav ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+}
+
+nav ul li a:before {
+  content: '';
+  margin-top: 8px;
+  width: 0px;
+  height: 3px;
+  background: #00D3DBFF;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: .5s; 
+}
+
+nav h1 {
+  float: left;
+  margin: 5px 0 5px 200px ;
+  padding: 10px;
+  border: 2px #00D3DBFF solid;
+  border-radius: 50%;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: #00D3DBFF;
+}
+
+nav ul li:hover a:before {
+  width: 100%;
+}
+
+
+  /* Welcome Section */
+
+#welcome-section {
+  min-height: 100vh;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+}
+
+#welcome-section h1 {
+  font-size: 4em;
+  padding-top: 270px;
+  font-weight: 500;
+}
+
+#welcome-section p {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+/* About Section */
+
+#about {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),url("https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+} 
+
+#about li{
+  width: 50%;
+  padding-top: 150px;
+  float: left;
+  list-style: none;
+  line-height: 2;
+}
+
+#about li h3 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* Projects */
+
+#projects {
+  min-height: 100vh;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),url("https://images.pexels.com/photos/1171480/pexels-photo-1171480.jpeg?auto=compress&cs=tinysrgb&h=350");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#projects h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#projects .project-tile {
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+#projects .project-tile .project-img {
+  padding: 20px 20px 20px 20px;
+  float: left;
+  text-align: center;
+}
+
+
+#projects .project-tile .project-img img {
+  width: 400px;
+  height: 350px;
+  border-radius: 4px;
+}
+
+#projects .project-tile .project-img h3 {
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+#projects .project-tile .project-img:hover {
+  border-bottom: 4px #00D3DBFF solid;
+  margin: 0;
+  transition: .3s;
+  color: #00D3DBFF;
+}
+
+
+/* Contact */
+
+#contact {
+  min-height: 30vh;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&h=350");
+  color: #fff;
+  text-align: center;
+}
+
+#contact h3 {
+  padding: 10px 0 40px 0 ;
+  font-weight: normal;
+  font-size: 3em;
+
+}
+
+#contact li {
+  list-style: none;
+  display: inline;
+  padding: 0 60px 0 60px;
+}
+
+#contact li a {
+  text-decoration: none;
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
+  color: #fff;
+}
+
+#contact li a:hover {
+  color: #FF006EFF;
+  transition: .2s;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 8vh;
+  text-align: center;
+  background-color: #070707FF;
+}
+
+footer p {
+  padding: 20px;
+  color: #C0C0C0FF;
+}
